@@ -1,0 +1,27 @@
+.block { overflow:auto; font-weight:bold;}
+.block dd, .block dt {font-size:.8em;}
+.pubkey { background-color:#950  }
+.pkkey { background-color:#14A}
+body,html { color: #fff; background: #222;	 font-family:Arial, Helvetica, sans-serif; padding: 0; margin: 0; height: 100%; overflow: hidden; }
+textarea { color: #eee; background: #444 }
+.block dt { float:left; min-width:110px; width:15%;}
+.actionbar { margin:0px;padding:0px;}
+.header { padding: 0 25px; }
+.error
+{ color:#F00; }
+.wrapbox {  
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+.wrapbox > div, .wrapbox > div > div { height: 100%; }
+.wrapbox > div > div { padding: 15px; }
+.rightbox { float:right;  width:50%;}
+.leftbox { float:left; width:50%;}
+.block dd { width:70%; }
+textarea.key_amor {
+width:100%;
+min-width:300px; height: 250px;
+}
+
