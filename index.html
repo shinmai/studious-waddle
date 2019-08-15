@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<title>verify</title>	
+	<script type="text/javascript" src="openpgp.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href="css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="header">
+		<h1>In-browser signature verification</h1>
+		<p>Copy &amp; paste the pubkey and the message into the boxes. Both re-compute when the textarea is changed or defocused</p>
+	</div>
+	<div class="wrapbox">
+		<div class="leftbox">		
+			<div class="block pubkey keys">
+				<h3>Public key</h3>
+				<textarea id="pubkey_amor" class="key_amor" onchange="check_pubk();" onblur="check_pubk();"></textarea>
+				<div id="info_pubkey"></div>
+				<div class="block">
+					<div id="pubk_msginfo" class="keypad">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightbox">
+			<div class="block pkkey keys">
+				<h3>Signed Message</h3>
+				<textarea class="key_amor" id="msgboxsigned" onchange="verify_delayed();" onblur="verify_delayed();"></textarea><br />
+				<div id="info_verify"></div>
+				<div class="block">
+					<div id="msg_verification">&nbsp;</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<textarea style="display: none; visibility: hidden;" id="msgbox"></textarea><br />
+</body>
+</html>
